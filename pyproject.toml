@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "trading-bot"
+version = "0.1.0"
+description = "Backtesting, paper trading and risk management for systematic trading strategies"
+authors = [{name = "Tahir Younas"}]
+license = {text = "GPL-3.0"}
+requires-python = ">=3.10"
+
+[tool.setuptools.packages.find]
+include = ["trading_bot*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
